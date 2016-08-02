@@ -10,19 +10,23 @@
   <body>
     <h3>We'll look at the time! </h3>
     <h3 id="time"></h3>
-    <form class="form-group" id="set-alarm">
-      <label for="alarm-time">Alarm Time:</label>
-      <input type="time" id="alarm-time" required>
-      <button type="submit">Set Alarm</button>
-    </form>
-    <div id="test">
-      <img src="img/alarm_clock.png" alt="ringing alarm clock">
+    <div class="container" id="alarm-forms">
+      <form class="form-group set-alarm">
+        <input type="hidden" class="alarm-number" value='0'>
+        <label for="alarm-time">Alarm Time:</label>
+        <input type="time" class="alarm-time" required>
+        <button type="submit">Set Alarm</button>
+      </form>
+      <div class="output" alarmNumber='0'>
+        <img src="img/alarm_clock.png" alt="ringing alarm clock">
+      </div>
+      <form class="snooze" alarmNumber='0'>
+        <label for="snooze-options">How Many Minutes to Snooze?</label>
+        <input type="number" class="snooze-options" value="2">
+        <button type="submit">Snooze</button>
+      </form>
+      <button type="button" alarmNumber='0' class="turn-off-alarm">Turn Off Alarm</button>
     </div>
-    <form id="snooze">
-      <label for="snooze-options">How Many Minutes to Snooze?</label>
-      <input type="number" id="snooze-options" value="2">
-      <button type="submit">Snooze</button>
-    </form>
-    <button type="button" id="turn-off-alarm">Turn Off Alarm</button>
+    <button type="button" id="another-alarm">Set Another Alarm</button>
   </body>
 </html>
