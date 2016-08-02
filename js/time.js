@@ -12,9 +12,8 @@ alarmClock.prototype.Timer = function(){
       var currentTimeMinute = moment().minute();
       if(currentTimeHour>=convertedAlarmTimeHour && currentTimeMinute>=convertedAlarmTimeMinute)
       {
-        $("#test").text("alarm is going off");
+        $("#test").show();
       }
-      console.log("interval is running")
     }
     , 10000);
   myTimer;

@@ -2,12 +2,13 @@
 <html>
   <head>
     <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>Alarm Clock</title>
   </head>
   <body>
-    <h3>Well look at the time! </h3>
+    <h3>We'll look at the time! </h3>
     <h3 id="time"></h3>
     <form class="form-group" id="set-alarm">
       <label for="alarm-time">Alarm Time:</label>
@@ -15,8 +16,13 @@
       <button type="submit">Set Alarm</button>
     </form>
     <div id="test">
-
+      <img src="img/alarm_clock.png" alt="ringing alarm clock">
     </div>
+    <form id="snooze">
+      <label for="snooze-options">How Many Minutes to Snooze?</label>
+      <input type="number" id="snooze-options" value="2">
+      <button type="submit">Snooze</button>
+    </form>
     <button type="button" id="turn-off-alarm">Turn Off Alarm</button>
   </body>
 </html>
